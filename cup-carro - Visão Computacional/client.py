@@ -1,7 +1,7 @@
 import requests
 
 def get():
-    url = 'http://26.17.180.2:8080/historicoCupCarro/get'
+    url = 'http://192.168.0.101:8080/historicoCupCarro/get'
 
     headers = {}
 
@@ -14,7 +14,7 @@ def get():
     
 def post(comodo, numComodo):
 
-    url = 'http://26.17.180.2:8080/historicoCupCarro/post'
+    url = 'http://192.168.0.101:8080/historicoCupCarro/post'
 
     headers = {
     "Content-Type": "application/json"

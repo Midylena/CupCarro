@@ -9,6 +9,8 @@ import org.springframework.http.ResponseEntity;
 
 public interface HistoricoDaoCupCarro extends JpaRepository<HistoricoCupCarro, Long>{
 	
-	@Query(value = "select * from historico_cup_carro where id = (select max(id) from historico_cup_carro);", nativeQuery = true)
+	@Query(value = "select * from historico_cup_carro where id = (select max(id) from historico_cup_carro);"
+			+ "", nativeQuery = true)
 	Collection<HistoricoCupCarro> hist();
+	
 }
